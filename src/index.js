@@ -1,4 +1,3 @@
-
 import MultipleFinder from './multipleFinder';
 import ClassA from './classA';
 import ClassB from './classB';
