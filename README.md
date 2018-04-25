@@ -23,4 +23,4 @@ followed by
 yarn start
 ```
 
-This will open a new browser window with webpack-dev-server
+The small-test case can then be viewed at: http://localhost:8080/
