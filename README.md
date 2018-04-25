@@ -10,6 +10,11 @@ For the small test there where no clearly defined conditions so I made it for "m
 
 For the stack I decided for a simple webpack and babel setup together with highcarts, lodash and papa parse (for csv).
 
+## How to view
+
+The best way is to setup the project (easily) and push the buttons to see everything in action.
+For just code review the best place to start is in the index.js (most code is there). Because I used good (builtin) libraries there are not so many lines of code.
+
 ## Setup
 
 Setup is simple by doing:
