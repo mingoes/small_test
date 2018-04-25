@@ -6,6 +6,7 @@ import PapaParse from 'papaparse';
 import _ from 'lodash';
 import Highcharts from 'highcharts';
 
+// ============= 1 =================//
 window.runMultipleCheck = () => {
     console.log('==== Start =====');
     MultipleFinder.runFor(100);
@@ -18,6 +19,7 @@ window.runMultipleCheckOneliner = () => {
     console.log('==== End =====');
 }
 
+// ============= 2 =================//
 window.performClassChecks = () => {
     // Construct the classes
     let classA = new ClassA();
@@ -30,17 +32,7 @@ window.performClassChecks = () => {
     console.log('Can classB reverse a string?', classB.reverse('Yes it can'));
 }
 
-window.fetchUrls = () => { 
-    // Fetch the URL's
-    const promise_1 = fetch('https://cdn.gfkdaphne.com/tests/async.php?a=1').then(resp => resp.text());
-    const promise_2 = fetch('https://cdn.gfkdaphne.com/tests/async.php?a=2').then(resp => resp.text());
-
-    // Wait for them to finish and log the response
-    Promise.all([promise_1, promise_2]).then(responses => {
-        console.log(responses[0] + ' ' + responses[1]);
-    }); 
-}
-
+// ============= 3 =================//
 window.drawChart = () => {
     // Fetch the date from the CSV
     fetch('/data.csv').then(resp => resp.text()).then(text => {
@@ -79,11 +71,21 @@ window.drawChart = () => {
                 }
             },
             series: [{
-                name: 'Yes votes',
+                name: '% Yes votes',
                 data: series
             }]
         });
     })
 }
 
+// ============= 4 =================//
+window.fetchUrls = () => { 
+    // Fetch the URL's
+    const promise_1 = fetch('https://cdn.gfkdaphne.com/tests/async.php?a=1').then(resp => resp.text());
+    const promise_2 = fetch('https://cdn.gfkdaphne.com/tests/async.php?a=2').then(resp => resp.text());
 
+    // Wait for them to finish and log the response
+    Promise.all([promise_1, promise_2]).then(responses => {
+        console.log(responses[0] + ' ' + responses[1]);
+    }); 
+}
