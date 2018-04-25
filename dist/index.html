@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>GFK Test</title>
+  </head>
+  <body>
+    <div id="gfktest1">
+        <h2>Test 1</h2>
+        <p>Files: classA.js, classB.js, classC.js</p>
+        <p>For the first test I have to print Bizz for multiples of 3, Appz for multiples of 5 and BizzAppz for multiples of both. 'BizzAppz' is convenient because it's simple to just concatenate the case for multiples of 3 and 5 so it doesn't require extra logic. I chose to make two versions, a normal, readable/extendable version like I would probably write in a normal environment. Besides that a fun version which is basically just one line to do it all. The only downside of the oneliner is readability, for a teammember it would be difficult to wrap his head around.</p>
+        <button onClick="runMultipleCheck()">Run</button>
+        <button onClick="runMultipleCheckOneliner()">Run oneliner</button>
+        <p>(Output in console)</p>
+    </div>
+    <div id="gfktest2">
+        <h2>Test 2</h2>
+        <p>For this test I have to write a class that extends another class. I made 3 classes to demonstrate inheritance: ClassA, which is the base class, it has a method called reverse that will reverse a string. ClassB, which extends ClassA and therefore is able to also reverse a string. ClassC, which does not extend anything, just to test/confirm/demonstrate that instances of ClassC are NOT instances of ClassA.</p>
+        <button onClick="performClassChecks()">Run</button>
+        <p>(Output in console)</p>
+    </div>
+    <div id="gfktest3">
+        <h2>Test 3</h2>
+        <p>For this test I have to fetch, parse, group and sum the CSV data before putting it into a graph.</p>
+        <button onClick="drawChart()">Show chart</button>
+        <div id="chart"></div>
+    </div>
+    <div id="gfktest4">
+        <h2>Test 4</h2>
+        <p>To get the contents of 2 url's I used the modern "fetch" api which returns 2 promises. I then wait for those promises to be resolved and I console log the data.</p>
+        <button onClick="fetchUrls()">Fetch url's</button>
+        <p>(Output in console, takes some time)</p>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
